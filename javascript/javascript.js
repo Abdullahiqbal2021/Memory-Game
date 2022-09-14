@@ -28,9 +28,11 @@ function matchCards(img1, img2) {
   if (img1 === img2) {
     matchedCard++;
     // Reseting the game
+    console.log(matchedCard);
     if (matchedCard == 8) {
       setTimeout(() => {
         return shuffleCard();
+
       }, 1000);
     }
 
@@ -56,7 +58,7 @@ function matchCards(img1, img2) {
 
 // shuffling all cards randomly
 function shuffleCard() {
-  let matchedCard = 0;
+  matchedCard = 0;
   let cardOne = cardTwo = "";
   disableDeck = false;
   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
