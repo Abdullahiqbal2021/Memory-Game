@@ -107,3 +107,10 @@ body {
 .card.flip .back-view {
   transform: rotateY(0deg);
 }
+@media (max-width:500px) {
+  .wrapper{
+    height: 300px;
+    width: 300px;
+  }
+}
+
